@@ -1,0 +1,1509 @@
+/*  
+Theme Name: Halter Design
+Theme URI: http://tatelucas.github.io/halterdesign
+Description: A Custom Theme for Halter Design
+Version: 10.0
+Author: Tate Lucas/Jeff Halter
+Author URI: http://www.tatelucas.com
+
+The CSS, XHTML and design is released under GPL:
+http://www.opensource.org/licenses/gpl-license.php
+
+
+TABLE OF CONTENTS
+ 
+  Inherited Styles
+  HTML Tags
+  Structure
+  Headers
+  Content Styles
+  Form Elements
+  Footer
+*/  
+  
+@import url('http://tatelucas.github.io/halterdesign/wp-content/themes/halter/css/clearfix.css');  
+  
+/* ---------- @ HTML Tags -----------*/
+
+
+
+* {
+	margin:0;
+	padding:0;
+	outline:none;
+	}
+
+body,html {
+	min-height:101%; /*Firefox scrollbar fix*/
+	}
+	
+body {
+	background: #90010d;
+	color: #F7E8AB;
+	padding: 0;
+	}
+
+body, select, input, textarea {
+	font: 100% "Century Gothic", "Century", Arial, Verdana, Sans-Serif /*Global font-size reset*/;
+	}
+	
+p {	
+	margin: 15px 0;
+	line-height:160%;
+	}
+
+a, a:visited {
+	color: #F8E9AD;
+	}
+
+a:hover, a:active {
+	color:#F8E9AD;
+	}
+	
+hr {
+	display: block;
+	height:1px;
+	background:#CCC;
+	border:0;
+	color:#CCC;
+	}
+
+table {
+	border-collapse:collapse;
+	width:100%;
+	margin:15px 0;
+	}
+
+td {
+	padding:4px 6px;
+	border-top:1px solid #CCC;
+	}
+
+tr {
+	background:#e3e3e3;
+	}
+	
+table caption {
+	background:#FFF;
+	padding:2px 0;
+	}	
+	
+blockquote {
+	color:#7b7b7b;
+	padding:0 18px;
+	margin:25px 45px;
+	border-left:3px solid #CCC;
+	font:italic 1em;
+	letter-spacing:.03em;
+	}
+
+.clear {
+  clear: both;
+}
+
+/* ---------- @ Structure -----------*/
+
+#main {
+	overflow:hidden;
+	padding:2px 0 0 20px;
+	position: relative;
+}
+
+#wrapper {
+	font-size:.8em /*Global content font-size*/;
+	overflow: hidden;
+	}
+
+#wrapperheader {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#wrappermiddle {
+  width: 960px;
+  margin: 0 auto; 
+}
+
+#whitewrappermiddle {
+  background: #fff; 
+  color: #000;
+	padding: 0 0 30px 0;  
+}
+
+.clientcont {
+  float: left;
+  text-align: center;
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+#whitewrappermiddle a {
+  color: #000;
+}
+
+.home #whitewrappermiddle {
+  background: #90010d;
+  color: #F7E8AB;
+}
+
+.home #whitewrappermiddle a {
+  color: #F7E8AB;
+}
+
+#masthead {
+	padding: 30px 0 5px 0;
+	overflow:hidden;
+	position: relative;
+	}
+
+#branding {
+	float:left;
+	width:575px;
+	margin: 0 0 0 0px;
+	}
+	
+#content {
+	width:565px;
+	float:left;
+	
+	}
+
+#sidebar {
+	width: 260px;
+	float:right;
+	padding:0 20px 20px;
+	}
+
+.left {
+	float:left
+	}
+
+.right {
+	float:right;
+	font-size: 12px;
+	}
+	
+	
+	
+	
+/* ---------- @ Headers -----------*/
+
+h1, h2, h3, h4, h5, h6 {
+
+	}
+
+h1.pagetitle {
+	border-bottom:1px solid #d7d7d7;
+	padding-bottom: 12px;
+	margin-bottom:20px;
+	}
+	
+h2 {
+	margin: 25px 0 20px;
+	}
+
+.entry h2 {
+	font-size:1.8em;
+	margin: 15px 0 0;
+	}
+	
+h2.posttitle, h1.posttitle {
+	margin:0;
+	font-size: 2.2em;
+	}
+
+#sidebar h3 {
+	border-bottom:3px solid #CCC;
+	padding-bottom:5px;
+	margin:22px 0 10px;
+	font:normal .85em Arial, Helvetica, sans-serif;
+	letter-spacing:.08em;
+	text-transform:uppercase
+	}
+
+.entry h3 {
+	font:1.6em;
+	}
+	
+#respond h3, h3#comments, h3#trackbacks {
+	margin:45px 0 20px;
+	font-weight:bold;
+	}
+
+h3#comments {
+	margin:32px 0 12px;
+	}
+
+h4 {
+	font-size:1.4em; 
+	}
+	
+h5 {
+	font-weight: bold;
+	font-size: 1.2em
+	}
+
+h6 {
+	font-weight: bold;
+	font-size: 1em;
+	}
+
+
+
+	
+/* ---------- @ Content Styles -----------*/
+
+/*Misc*/
+
+#logo {
+	font: bold 2.7em;
+	}
+
+#logo a {
+  width: 221px;
+  height: 24px;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/halterlogo.png) no-repeat;
+  text-indent: -9999px;
+  display: block;
+}
+
+#description {
+  font-size: 12px;
+  font-style: italic;
+	color: #90010D;
+	padding: 2px 0 0 90px;
+	float: left;
+	width: 200px;
+	letter-spacing: .1em;
+	line-height: 14px;
+	}
+	
+.commentcount {
+	padding-left: 17px;
+	background:url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/bubble.gif) no-repeat;
+	margin-left:14px;
+	}
+
+.more-link {
+	display:block;
+	margin-top:12px;
+	clear:both
+	}
+
+
+
+/* Author Page*/
+
+#writer {
+	overflow:hidden;
+	background:#f2f2f2;
+	margin-bottom:20px;
+	padding:16px;
+	}
+
+#writer p {
+	margin-top:0;
+	}
+		
+#writer .avatar {
+	margin:4px 17px 7px 0
+	}
+
+
+
+/* Search and Archives*/
+
+.search-highlight {
+	background:#FFFF00	
+	}
+
+#comment_pagination {
+	margin-top:22px;
+	overflow:hidden;
+	}
+
+#archive_pagination {
+	overflow: hidden;
+	padding: 20px;
+	text-align: center
+	}
+	
+.current-numeric-page {
+	padding: 5px 8px;
+	}
+	
+#archive_pagination a, #archive_pagination a:visited {
+	border:1px solid #CCC;
+	padding: 5px 8px;
+	text-decoration: none;
+	}
+	
+#archive_pagination a:hover {
+	background: #f5f5f5;
+	}
+
+#archive_pagination a:active {
+	background:#e6e6e6;
+	border-color:#bebebe;
+	}
+		
+#comment_pagination div {
+	float:left;
+	margin-right:10px;
+	}
+
+a #icon-rss {
+	border:none
+	}
+
+.archive #icon-rss {
+	vertical-align: middle;
+	margin-left:3px;
+	}		
+		
+	
+
+/*Sidebar and Widgets*/
+
+.widget {
+	margin-bottom: 10px;
+	overflow:hidden
+	}
+	
+.widget li {
+	list-style:none;
+	border-bottom:1px solid #fff;
+	padding:6px 0;
+	line-height:140%;
+	}
+
+.widget li a, .widget li a:visited {
+	color:#111;
+	text-decoration:none
+	}
+
+.widget li a:hover, .widget li a:active {
+	color:#6d6d6d;
+	}
+
+.widget li.current_page_item a, .widget li.current_page_item a:visited, 
+.widget li.current-cat a, .widget.current-cat a:visited {
+	font-weight:bold
+	}
+
+.widget li.current_page_item li a, .widget li.current_page_item li a:visited, 
+.widget li.current-cat li a, .widget li-current-cat li a:visited {
+	font-weight:normal;
+	}
+			
+.widget li li {
+	margin-left:34px;
+	border:0;
+	list-style:disc;
+	}
+
+#wp-calendar tr {
+	background:#f2f2f2;
+	}
+	
+#wp-calendar td {
+	text-align:center;
+	padding:3px;
+	}	
+	
+#recentcomments {
+	color: #787878;
+	}
+
+#recentcomments a, #recentcomments a:visited {
+	font-style:italic
+	}
+
+#recentcomments a.url, #recentcomments a.url:visited {
+	font-weight:bold;
+	font-style:normal;
+	}
+
+a.rsswidget, a.rsswidget:visited {
+	font-weight: bold
+	}
+
+.rssSummary {
+	line-height:160%;
+	}
+	
+#wp125adwrap_2c {
+	overflow:hidden
+	}
+
+#wp125adwrap_2c .wp125ad {
+	float:left;
+	margin-right: 8px;
+	}	
+
+.wp125ad a img {
+	border:none;
+	}
+
+#wp125adwrap_2c div+div {
+	margin:0 !important;
+	}
+
+#footer-widgets {
+	overflow: hidden;
+	background: #f1f1f1;
+	}
+	
+#footer-widgets .widget {
+	width: 270px;
+	float: left;
+	margin: 0 20px 0 30px;
+	padding:20px 0 35px;
+	} 		
+
+.fbicon {
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/facebookicon.png) no-repeat 0 0px;
+  text-indent: -9999px;
+  float: right;
+  margin: 0 0 0 5px;  
+}	
+
+.twittericon {
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/twittericon.png) no-repeat 0 0px;
+  text-indent: -9999px;
+  float: right;
+  margin: 0 0 0 5px;   
+}	
+
+.linkedinicon {
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/linkedinicon.png) no-repeat 0 0px;
+  text-indent: -9999px;
+  float: right;
+  margin: 0 0 0 5px;  
+}	
+
+.sociallinks {
+  margin: 0 5px 0 0px;
+}
+
+#copyright {
+  margin: 0 0 0 4px !important;
+  font-size: 11px;
+}
+
+#footer p {
+  margin: 0;
+  padding: 0;
+}
+	
+/* ---------- @ Form Elements -----------*/
+
+#author, #email, #comment, #url, #searchfield {
+	background:#FFF !important;
+	padding:5px;
+	border-width:1px;
+	border-style:solid;
+	border-color: #6d6d6d #bfbfbf #bfbfbf #6d6d6d;
+	}
+
+#author, #email, #url {
+	width:220px;
+	}
+		
+.button {
+	padding: 8px 14px;
+	background:#424242;
+	color:#FFF !important;
+	border:none;
+	font-size:1.2em;
+	}
+
+.button:hover {
+	background:#272727;
+	}
+
+.button:active {
+	background:#000;
+	}
+
+#commentform textarea {
+	width: 98%;
+	height:250px;
+	}
+
+#masthead #searchform {
+	float:right;
+	width:260px;
+	text-align:right;
+	padding-top:12px;
+	}
+
+#searchfield {
+	width:220px;
+	}
+	
+#searchsubmit {
+	vertical-align:top
+	}		
+	
+
+
+
+/* ---------- @ Footer -----------*/
+
+#footer {
+	font-size:.8em;
+	overflow:hidden;
+	width:960px;
+	margin:0 auto;
+	color:#c4755a;
+	padding: 18px 0;
+	background: #90010D;
+	}
+
+#footer a {
+  text-decoration: none;
+}
+
+#footer a, #footer a:active {
+	color:#c4755a;
+	}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
+#footer .left {
+	float:left;
+	width:50%;
+	}
+
+#footer.right {
+	float:right;
+	width:50%;
+	text-align: right;
+	}
+	
+#footer #icon-rss {
+	vertical-align: middle;
+	margin-right:5px;
+	}
+
+
+/*Top Page Navbar */
+
+.top-nav {
+  position: relative;
+  margin: 0 0 30px 0;
+}
+
+.top-nav, div.menu {
+	background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/navbg.png) no-repeat right;
+	height: 23px;
+	}
+
+.menu-top-nav-container {
+  float: left;
+  width: 660px;
+}
+
+#sidebar .top-nav ul.menu {
+	background: transparent;
+	padding: 0;
+	}
+		
+.top-nav ul.menu, div.menu ul.menu {
+	list-style: none;
+	z-index:1;
+	padding:0;
+	display:inline-block;
+	vertical-align: bottom;
+	float: right;
+	}
+
+.top-nav ul.menu li, div.menu ul.menu li {
+	float: left;
+	margin: 2px 10px 0 0px;
+	position:relative;
+	list-style:none;
+	font-size: 12px;
+	display: block;
+	height: 15px;
+	line-height: 14px;
+	border-right: 1px solid #A70808;
+	padding: 0 10px 0 0;
+	letter-spacing: .1em;
+	}
+
+.top-nav ul.menu a {
+  display: block;
+  text-align: center;
+}
+
+/*
+#menu-item-24 a {
+  width: 70px;
+}
+
+#menu-item-23 a {
+  width: 55px;
+}
+
+#menu-item-22 a {
+  width: 57px;
+}
+
+#menu-item-21 a {
+  width: 50px;
+}
+
+#menu-item-20 a {
+  width: 78px;
+}
+
+#menu-item-19 a {
+  width: 85px;
+}
+*/
+
+#menu-item-23 a {
+  width: 71px;
+}
+
+#menu-item-22 a {
+  width: 55px;
+}
+
+#menu-item-21 a {
+  width: 57px;
+}
+
+#menu-item-20 a {
+  width: 50px;
+}
+
+#menu-item-19 a {
+  width: 78px;
+}
+
+#menu-item-18 a {
+  width: 85px;
+}
+	
+.top-nav ul.menu a, .top-nav ul.menu a:visited, 
+div.menu ul.menu a, div.menu ul.menu a:visited {
+	display: block;
+	text-decoration: none;
+	color:#F8E9AD;
+	text-transform: lowercase !important;	
+	}
+
+.top-nav ul.menu a:hover, div.menu ul.menu a:hover {
+	font-weight: bold;
+	color: #fff;
+	}
+
+.top-nav ul.menu li.current_page_item a, .top-nav ul.menu li.current_page_item a:visited, 
+div.menu ul.menu li.current_page_item a, div.menu ul.menu li.current_page_item a:visited {
+	color:#fff;
+	font-weight: bold;	
+	}
+	
+#menu-item-710.current_page_item a {
+  color: #F8E9AD;
+  font-weight: normal;
+}
+
+#menu-item-710.current_page_item a:hover {
+	color:#fff;
+	font-weight: bold;	
+}
+
+.current-page-ancestor a {
+	color:#fff !important;
+	font-weight: bold;	
+}
+
+
+
+	
+/* Dropdown Menus */		
+
+.top-nav ul.menu li:hover, div.menu ul.menu li:hover {
+	visibility: inherit; /* fixes IE7 'sticky bug' */
+	}
+
+.top-nav ul.menu li:hover ul,
+.top-nav ul.menu li.sfhover ul, 
+div.menu ul.menu li:hover ul,
+div.menu ul.menu li.sfhover ul {
+	left: 7px;
+	}
+
+.top-nav ul.menu li:hover li ul,
+.top-nav ul.menu li.sfhover li ul, 
+div.menu ul.menu li:hover li ul,
+div.menu ul.menu li.sfhover li ul {
+	top: -999em;
+	}
+
+.top-nav ul.menu li li:hover ul,
+.top-nav ul.menu li li.sfhover ul, 
+div.menu ul.menu li li:hover ul,
+div.menu ul.menu li li.sfhover ul {
+	top: 0;
+	}
+
+.top-nav ul.menu li li:hover li ul,
+.top-nav ul.menu li li.sfhover li ul, 
+div.menu ul.menu li li:hover li ul,
+div.menu ul.menu li li.sfhover li ul {
+	top: -999em;
+	}
+
+.top-nav ul.menu li li li:hover ul,
+.top-nav ul.menu li li li.sfhover ul, 
+div.menu ul.menu li li li:hover ul,
+div.menu ul.menu li li li.sfhover ul {
+	left: 178px; /* match ul width */
+	top: 0;
+	}
+
+.top-nav ul.menu li ul, div.menu ul.menu li ul {
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width: 178px;
+	z-index:1 !important;
+	line-height:1;
+	margin-left:11px;
+	background:url(http://tatelucas.github.io/halterdesign/wp-content/themes/images/bg_nav.png);
+	}
+
+.top-nav ul.menu li li, div.menu ul.menu li li {
+	width: 178px;
+	z-index:1000;
+	border-bottom:1px solid #848484;
+	}
+
+.top-nav .menu li li a, .top-nav .menu li li a:visited, 
+.top-nav .menu li.current_page_parent li.current_page_item a, 
+.top-nav .menu li.current_page_parent li.current_page_item a:visited, 
+div.menu .menu li li a, .top-nav .menu li li a:visited, 
+div.menu .menu li.current_page_parent li.current_page_item a, 
+div.menu .menu li.current_page_parent li.current_page_item a:visited {
+	color:#dadada !important;
+	padding:8px 12px !important;
+	background:transparent !important;
+	}
+
+.top-nav .menu li li a:hover, .top-nav .menu li li a:active,
+.top-nav .menu li.current_page_parent li.current_page_item a:hover, 
+.top-nav .menu li.current_page_parent li.current_page_item a:active, 
+div.menu .menu li li a:hover, .top-nav .menu li li a:active,
+div.menu .menu li.current_page_parent li.current_page_item a:hover, 
+div.menu .menu li.current_page_parent li.current_page_item a:active {
+	color:#FFF !important;
+	}	
+		
+.top-nav .menu li:hover ul, 
+.top-nav .menu li li:hover ul, 
+.top-nav .menu li li li:hover ul, 
+.top-nav .menu li.sfhover ul, 
+.top-nav .menu li li.sfhover ul, 
+.top-nav .menu li li li.sfhover ul, 
+div.menu .menu li:hover ul, 
+div.menu .menu li li:hover ul, 
+div.menu .menu li li li:hover ul, 
+div.menu .menu li.sfhover ul, 
+div.menuv .menu li li.sfhover ul, 
+div.menu .menu li li li.sfhover ul {
+	left: auto;
+	}
+
+.top-nav .menu ul ul, div.menu .menu ul ul {
+	margin:0 0 0 178px !important
+	}
+
+.top-nav .menu ul ul ul, div.menu .menu ul ul ul {
+	margin:-29px 0 0 178px !important
+	}
+
+.top-nav .menu a.sf-with-ul, div.menu .menu a.sf-with-ul {
+	padding-right: 30px;
+	min-width: 1px; /* trigger IE7 hasLayout so spans position accurately */
+}
+
+.top-nav .menu li .sf-sub-indicator, div.menu .menu li .sf-sub-indicator {
+	position: absolute;
+	display: block;
+	right: 	.6em;
+	top: 	.8em; /* IE6 only */
+	width: 	16px;
+	height: 	10px;
+	text-indent: 	-999em;
+	overflow: hidden;
+	background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/images/arrow_nav.gif) no-repeat;
+}
+
+.top-nav .menu li li .sf-sub-indicator, div.menu .menu li li .sf-sub-indicator {
+	background-image:url(http://tatelucas.github.io/halterdesign/wp-content/themes/images/arrow_child.gif) !important;
+	}
+	
+	
+	
+/* ---------- @ Post Styles -----------*/
+
+#post-11 .entry {
+  height: 280px;
+  overflow: hidden;
+}
+
+.entry {
+	padding-bottom:18px;
+	overflow:hidden
+	}
+
+.postmetadata {
+	margin:0;
+	padding-top:8px;
+	color:#939393;
+	font-size:.85em;
+	text-transform:uppercase;
+	letter-spacing:.08em;
+	}	
+
+.postmetadata em {
+	font:italic 1em;
+	text-transform:none;
+	letter-spacing:.1em;
+	}
+
+.entry pre {
+	width:100%;
+	overflow:auto;
+	margin:15px 0;
+	display:block;
+	background:#f5f3ee;
+	}
+	
+.entry code {
+	padding:0 18px;
+	display:block;
+	font-size:1.2em;
+	}
+
+.entry ul, .entry ol {
+	margin:15px 0;
+	padding:15px;
+	}
+				
+.entry li {
+	margin: 0 0 10px 42px;
+	line-height:145%;
+	}
+
+#tags span {
+	padding:3px 6px;
+	background:#f2f2f2
+	}	
+
+#tags a, #tags a:visited {
+	text-decoration: none
+	}
+	
+p#tags, p#wp-edit, p.nextpage {
+	clear:both
+	}
+	
+	
+
+/*Images*/
+	
+.entry img {
+	display:block;
+	border:1px solid #999;
+	padding:2px;
+	margin:15px 0;
+	}
+
+.wp-caption {
+	background:#f2f2f2;
+	text-align:center;
+	padding:10px 5px 10px 10px;
+	}
+
+img.alignleft {
+	margin:5px 15px 10px 0;
+	float:left
+	}
+
+img.alignright {
+	margin:5px 0 10px 15px;
+	float:right
+	}
+
+.wp-caption.alignleft {
+	float:left;
+	margin:20px 22px 10px 0;
+	}
+	
+.wp-caption.alignright {
+	float:right;
+	margin:20px 0 10px 22px;
+	}
+
+.wp-caption.aligncenter, img.aligncenter {
+    margin: 0 auto;
+	display:block;
+	margin-bottom:15px;
+	margin-top:15px;
+	float:none
+   	}
+		
+p.wp-caption-text {
+	margin:0;
+	text-align:center;
+	padding:5px 0;
+	}	
+
+.wp-caption img {
+	float:none;
+	margin:0;
+	}	
+
+.gallery {
+	margin:15px 0;
+	display:block;
+	}
+	
+.gallery img {
+	border:1px solid #999 !important;
+	padding:2px;
+	margin:0 auto
+	}
+
+.gallery-item {
+	padding:12px 0;
+	text-align:center
+	}
+
+.gallery-caption {
+	padding:10px 0;
+	}
+	
+	
+	
+	
+
+/* ---------- @ Comments -----------*/
+
+	
+.reply a, .reply a:visited  {
+	width:75px;
+	background:#CCC;
+	color:#FFF;
+	display:block;
+	margin-bottom:15px;
+	padding:5px !important;
+	text-align:center;
+	text-decoration:none !important;
+	font:italic 1em;
+	position:relative;
+	}
+
+.reply a:hover {
+	background:#aeaeae;
+	text-decoration:none;
+	color:#FFF;
+	}
+
+.reply a:active {
+	background: #424242;
+	color:#FFF;
+	}
+			
+.commentlist li {
+	margin: 0 0 22px;
+	padding: 15px;
+	border-bottom:1px solid #DDD;
+	border-top:1px solid #DDD;
+	list-style:none
+	}
+
+.commentlist li li {
+	border:none;
+	border-left: 1px solid #CCC;	
+	margin:0 0 0 20px;
+	padding-left:25px;
+	background:none
+	}
+
+.commentlist li.bypostauthor {
+	background:#e5e5e5 !important; 
+	border:2px solid #CCC;
+	}
+	
+.commentlist code {
+	background:#f2f2f2;
+	padding:3px;
+	}
+	
+.avatar {
+	margin: 3px 10px 0 0;
+	float:left;
+	padding:2px;
+	border:1px solid #b9b9b9;
+	}
+
+#trackbacklist li {
+	margin: 10px 0 10px 35px;
+	}
+
+#trackbacklist cite {
+	font-style:normal
+	}
+			
+cite.fn {
+	font: bold 1.4em;
+	letter-spacing:-0.05em;
+	display:block;
+	padding:9px 0 4px;
+	}	
+
+.says {
+	display:none;
+	}
+
+.comment-author {
+	overflow:hidden;
+	}
+		
+.commentmetadata {
+	float:left
+	}
+ 
+.comment-date a, .comment-date a:visited {
+	color:#9f9f9f;
+	font-size:0.9em;
+	text-decoration:none
+	}
+
+.commentmetadata a:hover, .commentmetadata a:active  {
+	text-decoration:underline;
+	color:#333;
+	}		
+	
+.transparentfifty {
+        /* Required for IE 5, 6, 7 */
+        /* ...or something to trigger hasLayout, like zoom: 1; */
+        width: 100%; 
+
+        /* Theoretically for IE 8 & 9 (more valid) */
+        /* ...but not required as filter works too */
+        /* should come BEFORE filter */
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+        /* This works in IE 8 & 9 too */
+        /* ... but also 5, 6, 7 */
+        filter: alpha(opacity=50);
+
+        /* Older than Firefox 0.9 */
+        -moz-opacity:0.5;
+
+        /* Safari 1.x (pre WebKit!) */
+        -khtml-opacity: 0.5;
+
+        /* Modern!
+        /* Firefox 0.9+, Safari 2?, Chrome any?
+        /* Opera 9+, IE 9+ */
+        opacity: 0.5;
+}	
+
+.transparentonehundred {
+        /* Required for IE 5, 6, 7 */
+        /* ...or something to trigger hasLayout, like zoom: 1; */
+        width: 100%; 
+
+        /* Theoretically for IE 8 & 9 (more valid) */
+        /* ...but not required as filter works too */
+        /* should come BEFORE filter */
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+
+        /* This works in IE 8 & 9 too */
+        /* ... but also 5, 6, 7 */
+        filter: alpha(opacity=100);
+
+        /* Older than Firefox 0.9 */
+        -moz-opacity:1;
+
+        /* Safari 1.x (pre WebKit!) */
+        -khtml-opacity: 1;
+
+        /* Modern!
+        /* Firefox 0.9+, Safari 2?, Chrome any?
+        /* Opera 9+, IE 9+ */
+        opacity: 1;
+}	
+
+.home #main {
+  position: relative;
+  min-height: 430px;
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+
+.homepagequote {
+  width: 435px;
+  height: 104px;
+  position: absolute;
+  top: 280px;
+  left: 230px;
+  text-align: center;
+}
+
+.homepageposts {
+  float: left;
+  width: 175px;
+  margin: 18px 20px 20px 2px;
+}
+
+.homepageposts h3 {
+  text-align: right;
+  font-family: "Century Gothic", "Century", Arial, Verdana, Sans-Serif /*Global font-size reset*/;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  padding: 0 4px 4px 4px ;
+  border-bottom: 1px solid #b90e2e;      
+}
+
+.homepageposts ul {
+  margin: 0;
+  padding: 0;
+}
+
+.homepageposts li {
+  margin: 0;
+  padding: 4px;
+  border-bottom: 1px solid #b90e2e;
+  text-align: right;
+}
+
+.homepageposts li a, .homepageposts li a:visited {
+  color: #F7E8AB;
+}
+
+.homepageposts li a:hover {
+  color: #fff !important;
+  font-weight: bold !important;
+}
+
+#homeslider {
+  position: absolute;
+  top: 20px;
+  left: 230px;
+  width: 435px;
+  height: 270px;
+  overflow: hidden;
+}
+
+#homeslider img {
+  border: none;
+}
+
+.interiormenu {
+  float: left;
+  width: 175px;
+  margin: 18px 20px 20px 2px;
+}
+
+.interiormenu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.interiormenu li {
+  margin: 0;
+  padding: 4px;
+  border-bottom: 1px solid #A50808;
+  text-align: right;
+  list-style: none;
+}
+
+.interiormenu li a, .interiormenu li a:visited {
+  color: #44403F;
+  text-decoration: none;
+}
+
+.interiormenu li a:hover {
+  color: #90010D !important;
+  font-weight: bold !important;
+}
+
+.interiormenu h3 {
+  text-align: right;
+  font-family: "Century Gothic", "Century", Arial, Verdana, Sans-Serif /*Global font-size reset*/;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #A50808;
+  border-bottom: 1px solid #A50808;   
+  padding: 0 4px 3px 4px; 
+}
+
+.interiorslider, .interiorstatic {
+  width: 740px;
+  float: left;
+  margin: 12px 0 0 0;
+  height: 294px;
+}
+
+.interiorslider {
+  overflow: hidden;
+}
+
+.interiorsliderimage {
+  float: left;
+  width: 476px;
+  margin: 0 20px 0 0;
+}
+
+.interiorslidecontent {
+  float: left;
+  margin: 3px 0 0 0;
+  width: 243px;
+  color: #000;
+}
+
+.interiorslidecontent h3 {
+  margin: 0 0 0px 0;
+  padding: 0;
+  color: #A50808;
+}
+
+.interiorslidecontent p {
+  margin: 0 0 8px 0;
+  padding: 0;
+  line-height: 140%;
+  color: #636466;
+  font-size: 12px;
+}
+
+#menu-our-work .current-menu-item a {
+  color: #A50808;
+}
+
+#menu-our-work a:hover {
+  color: #A50808;
+}
+
+.intslidetitle {
+  width: 456px;
+  height: 23px;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/slidetitlebg.png) no-repeat;
+  line-height: 23px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  color: #fff;
+  margin: 4px 0 0 0;
+}
+
+.intslidetitle p {
+  display: inline;
+}
+
+.intslidetitle p, .intslidetitle input {
+  font-size: 12px;
+  text-transform: none;
+}
+
+.intpageslide {
+  width: 760px;
+}
+
+.intslidetitle input[type="text"], .intslidetitle input[type="password"] {
+  width: 66px;
+  padding: 0 4px;
+  height: 15px;
+  line-height: 9px;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/login-input.png) no-repeat !important;
+  font-size: 10px;
+  margin: 3px 10px 0 0;
+  border: 0;  
+}
+
+#intslideprev {
+  position: absolute;
+  display: block;
+  height: 37px;
+  width: 16px;
+  left: 229px;
+  top: 126px;
+  z-index: 1001;
+  text-indent: -9999px;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/prev.png) no-repeat;
+}
+
+#intslidenext {
+  position: absolute;
+  display: block;
+  height: 37px;
+  width: 16px;
+  left: 665px;
+  top: 126px;
+  z-index: 1001;
+  text-indent: -9999px;  
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/next.png) no-repeat;
+}
+
+h3 a {
+  text-decoration: none;
+  color: #A50808 !important;
+}
+
+.home #clientmenu { 
+  display: none;
+}
+
+#clientmenu {
+	font-size: 10px;
+	text-align: left;
+  clear: both;
+  width: 960px;
+  margin: 20px auto 0 auto;
+  color: #c4755a;
+}
+
+#clientmenu a {
+  text-decoration: none;
+  color: #c4755a;
+}
+
+.activeclientslide a {
+ color: #F8E9AD !important;
+}
+
+#clientmenu a:hover {
+  color: #F8E9AD !important;
+}
+
+.clientname {
+  width: 175px;
+  margin: 0 30px 0 22px;
+  text-align: right;
+  float: left;
+  font-size: 12px;
+}
+
+.clientpages {
+  float: left;
+  width: 500px;
+}
+
+.clientpages ul li {
+  list-style: none;
+  display: inline;
+  margin: 0 8px 0 0;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.clientrow {
+  clear: both;
+  width: 960px;  
+  margin: 0 0 3px 0;
+  float: left;
+}
+
+#pnav {
+  display: none;
+}
+
+.restricted {
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/restrictedbg.png) no-repeat;
+  width: 396px;
+  height: 195px;
+  padding: 35px 40px;
+  color: #fff;
+}
+
+.restricted p {
+  margin: 0 0 20px 0;
+}
+
+.headerphone {
+  position: absolute;
+  text-align: right;
+  right: 1px;
+  top: 39px;
+  font-size: 14px;  
+}
+
+.clientloginform {
+  position: absolute;
+  left: 190px;
+  top: 23px;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/loginbg.png) no-repeat;
+  height: 18px;
+  width: 242px;
+}
+
+.clientloginform input[type="password"] {
+  background: none;
+  border: none;
+  margin: 0 0 0 100px;
+  width: 92px;  
+  float: left;
+}
+
+#clientsubmit {
+  background: none;
+  border: none;
+  display: block;
+  text-indent: -9999px;
+  width: 50px;
+  height: 17px;
+  float: left;
+  cursor: pointer;
+}
+
+.clientloginerror {
+  left: 191px;
+  top: 35px;
+  color: #fff;
+  position: absolute;
+  font-size: 11px;
+}
+
+.hdteam, .ourworkh3 {
+  margin: 0 0 8px 0 !important;
+}
+
+.clientloginpagediv {
+  width: 476;
+  height: 265px;
+  position: relative;
+}
+
+#contactsociallinks {
+  margin: 10px 5px 0 0;
+}
+
+.single #wrappermiddle, .archive #wrappermiddle {
+  padding-top: 20px;
+}
+
+.single .post {
+  text-align: justify;
+}
