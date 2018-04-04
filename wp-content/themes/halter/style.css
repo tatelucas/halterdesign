@@ -132,7 +132,7 @@ blockquote {
 
 .clientcont {
   float: left;
-  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/footerbg.jpg) repeat-x;
+  /*background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/footerbg.jpg) repeat-x;*/
   text-align: center;
   width: 100%;
   margin: 0 0 20px 0;
@@ -1186,7 +1186,7 @@ cite.fn {
   letter-spacing: 1px;
   font-weight: normal;
   padding: 0 4px 4px 4px ;
-  border-bottom: 1px solid #b90e2e;      
+  border-bottom: 1px solid #F8E9AD;      
 }
 
 .homepageposts ul {
@@ -1197,7 +1197,7 @@ cite.fn {
 .homepageposts li {
   margin: 0;
   padding: 4px;
-  border-bottom: 1px solid #b90e2e;
+  border-bottom: 1px solid #F8E9AD;
   text-align: right;
 }
 
