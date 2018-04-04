@@ -21,7 +21,7 @@ TABLE OF CONTENTS
   Footer
 */  
   
-@import url('http://halterdesign.com/wp-content/themes/halter/css/clearfix.css');  
+@import url('http://tatelucas.github.io/halterdesign/wp-content/themes/halter/css/clearfix.css');  
   
 /* ---------- @ HTML Tags -----------*/
 
@@ -38,7 +38,7 @@ body,html {
 	}
 	
 body {
-	background: #90010d;
+	background: #03847a;
 	color: #F7E8AB;
 	padding: 0;
 	}
@@ -132,6 +132,7 @@ blockquote {
 
 .clientcont {
   float: left;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/footerbg.jpg) repeat-x;
   text-align: center;
   width: 100%;
   margin: 0 0 20px 0;
@@ -142,7 +143,7 @@ blockquote {
 }
 
 .home #whitewrappermiddle {
-  background: #90010d;
+  background: #03847a;
   color: #F7E8AB;
 }
 
@@ -262,7 +263,7 @@ h6 {
 #logo a {
   width: 221px;
   height: 24px;
-  background: url(http://halterdesign.com/wp-content/themes/halter/images/halterlogo.png) no-repeat;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/halterlogo.png) no-repeat;
   text-indent: -9999px;
   display: block;
 }
@@ -270,7 +271,7 @@ h6 {
 #description {
   font-size: 12px;
   font-style: italic;
-	color: #90010D;
+	color: #03847a;
 	padding: 2px 0 0 90px;
 	float: left;
 	width: 200px;
@@ -280,7 +281,7 @@ h6 {
 	
 .commentcount {
 	padding-left: 17px;
-	background:url(http://halterdesign.com/wp-content/themes/halter/images/bubble.gif) no-repeat;
+	background:url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/bubble.gif) no-repeat;
 	margin-left:14px;
 	}
 
@@ -465,7 +466,7 @@ a.rsswidget, a.rsswidget:visited {
   display: block;
   width: 17px;
   height: 17px;
-  background: url(http://halterdesign.com/wp-content/themes/halter/images/facebookicon.png) no-repeat 0 0px;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/facebookicon.png) no-repeat 0 0px;
   text-indent: -9999px;
   float: right;
   margin: 0 0 0 5px;  
@@ -475,7 +476,7 @@ a.rsswidget, a.rsswidget:visited {
   display: block;
   width: 17px;
   height: 17px;
-  background: url(http://halterdesign.com/wp-content/themes/halter/images/twittericon.png) no-repeat 0 0px;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/twittericon.png) no-repeat 0 0px;
   text-indent: -9999px;
   float: right;
   margin: 0 0 0 5px;   
@@ -485,7 +486,7 @@ a.rsswidget, a.rsswidget:visited {
   display: block;
   width: 17px;
   height: 17px;
-  background: url(http://halterdesign.com/wp-content/themes/halter/images/linkedinicon.png) no-repeat 0 0px;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/linkedinicon.png) no-repeat 0 0px;
   text-indent: -9999px;
   float: right;
   margin: 0 0 0 5px;  
@@ -565,9 +566,9 @@ a.rsswidget, a.rsswidget:visited {
 	overflow:hidden;
 	width:960px;
 	margin:0 auto;
-	color:#c4755a;
+	color:#F8E9AD;
 	padding: 18px 0;
-	background: #90010D;
+	background: #03847a;
 	}
 
 #footer a {
@@ -575,7 +576,7 @@ a.rsswidget, a.rsswidget:visited {
 }
 
 #footer a, #footer a:active {
-	color:#c4755a;
+	color:#F8E9AD;
 	}
 
 #footer a:hover {
@@ -607,7 +608,7 @@ a.rsswidget, a.rsswidget:visited {
 }
 
 .top-nav, div.menu {
-	background: url(http://halterdesign.com/wp-content/themes/halter/images/navbg.png) no-repeat right;
+	background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/navbg.png) no-repeat right;
 	height: 23px;
 	}
 
@@ -639,7 +640,7 @@ a.rsswidget, a.rsswidget:visited {
 	display: block;
 	height: 15px;
 	line-height: 14px;
-	border-right: 1px solid #A70808;
+	border-right: 1px solid #07A29D;
 	padding: 0 10px 0 0;
 	letter-spacing: .1em;
 	}
@@ -786,7 +787,7 @@ div.menu ul.menu li li li.sfhover ul {
 	z-index:1 !important;
 	line-height:1;
 	margin-left:11px;
-	background:url(http://halterdesign.com/wp-content/themes/images/bg_nav.png);
+	background:url(http://tatelucas.github.io/halterdesign/wp-content/themes/images/bg_nav.png);
 	}
 
 .top-nav ul.menu li li, div.menu ul.menu li li {
@@ -852,11 +853,11 @@ div.menu .menu li li li.sfhover ul {
 	height: 	10px;
 	text-indent: 	-999em;
 	overflow: hidden;
-	background: url(http://halterdesign.com/wp-content/themes/images/arrow_nav.gif) no-repeat;
+	background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/images/arrow_nav.gif) no-repeat;
 }
 
 .top-nav .menu li li .sf-sub-indicator, div.menu .menu li li .sf-sub-indicator {
-	background-image:url(http://halterdesign.com/wp-content/themes/images/arrow_child.gif) !important;
+	background-image:url(http://tatelucas.github.io/halterdesign/wp-content/themes/images/arrow_child.gif) !important;
 	}
 	
 	
@@ -1247,7 +1248,7 @@ cite.fn {
 }
 
 .interiormenu li a:hover {
-  color: #90010D !important;
+  color: #03847a !important;
   font-weight: bold !important;
 }
 
@@ -1311,7 +1312,7 @@ cite.fn {
 .intslidetitle {
   width: 456px;
   height: 23px;
-  background: url(http://halterdesign.com/wp-content/themes/halter/images/slidetitlebg.png) no-repeat;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/slidetitlebg.png) no-repeat;
   line-height: 23px;
   text-transform: uppercase;
   padding: 0 10px;
@@ -1337,7 +1338,7 @@ cite.fn {
   padding: 0 4px;
   height: 15px;
   line-height: 9px;
-  background: url(http://halterdesign.com/wp-content/themes/halter/images/login-input.png) no-repeat !important;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/login-input.png) no-repeat !important;
   font-size: 10px;
   margin: 3px 10px 0 0;
   border: 0;  
@@ -1352,7 +1353,7 @@ cite.fn {
   top: 126px;
   z-index: 1001;
   text-indent: -9999px;
-  background: url(http://halterdesign.com/wp-content/themes/halter/images/prev.png) no-repeat;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/prev.png) no-repeat;
 }
 
 #intslidenext {
@@ -1364,7 +1365,7 @@ cite.fn {
   top: 126px;
   z-index: 1001;
   text-indent: -9999px;  
-  background: url(http://halterdesign.com/wp-content/themes/halter/images/next.png) no-repeat;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/next.png) no-repeat;
 }
 
 h3 a {
@@ -1382,12 +1383,12 @@ h3 a {
   clear: both;
   width: 960px;
   margin: 20px auto 0 auto;
-  color: #c4755a;
+  color: #F8E9AD;
 }
 
 #clientmenu a {
   text-decoration: none;
-  color: #c4755a;
+  color: #F8E9AD;
 }
 
 .activeclientslide a {
@@ -1431,7 +1432,7 @@ h3 a {
 }
 
 .restricted {
-  background: url(http://halterdesign.com/wp-content/themes/halter/images/restrictedbg.png) no-repeat;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/restrictedbg.png) no-repeat;
   width: 396px;
   height: 195px;
   padding: 35px 40px;
@@ -1454,7 +1455,7 @@ h3 a {
   position: absolute;
   left: 190px;
   top: 23px;
-  background: url(http://halterdesign.com/wp-content/themes/halter/images/loginbg.png) no-repeat;
+  background: url(http://tatelucas.github.io/halterdesign/wp-content/themes/halter/images/loginbg.png) no-repeat;
   height: 18px;
   width: 242px;
 }
