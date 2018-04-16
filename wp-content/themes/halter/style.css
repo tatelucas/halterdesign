@@ -709,14 +709,14 @@ div.menu ul.menu a, div.menu ul.menu a:visited {
 	}
 
 .top-nav ul.menu a:hover, div.menu ul.menu a:hover {
-	font-weight: bold;
+	/*font-weight: bold;*/
 	color: #fff;
 	}
 
 .top-nav ul.menu li.current_page_item a, .top-nav ul.menu li.current_page_item a:visited, 
 div.menu ul.menu li.current_page_item a, div.menu ul.menu li.current_page_item a:visited {
 	color:#fff;
-	font-weight: bold;	
+	/*font-weight: bold;*/
 	}
 	
 #menu-item-710.current_page_item a {
@@ -726,12 +726,12 @@ div.menu ul.menu li.current_page_item a, div.menu ul.menu li.current_page_item a
 
 #menu-item-710.current_page_item a:hover {
 	color:#fff;
-	font-weight: bold;	
+	/*font-weight: bold;*/	
 }
 
 .current-page-ancestor a {
 	color:#fff !important;
-	font-weight: bold;	
+	/*font-weight: bold;*/	
 }
 
 
